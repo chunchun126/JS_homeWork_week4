@@ -1,0 +1,46 @@
+
+// * {
+//     outline: solid 1px black;
+// }
+html,body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Microsoft JhengHei';
+	background: #50a3a2;
+	background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+	background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+	background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+	background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+}
+.formLogin {	
+	color: white;
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;	
+	input {
+		text-align: center;
+		transition: 0.5s;
+		border: 3px solid white;
+		background: rgba(white, .2);
+		&:hover {
+			background: rgba(white, .4);
+		}
+		&:focus {
+			transform: scale(1.1);
+		}
+	}
+}
+@media (max-width: 768px) {
+    .formLogin {
+        width: 100%;
+    }
+}
+.formCheck {
+    width: 22px;
+	height: 22px;
+}
