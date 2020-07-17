@@ -71,7 +71,7 @@ const app = new Vue({
                     vm.tempProduct = Object.assign({}, item) // 物件拷貝
                     this.isNew = false;
                     // 使用 refs 觸發子元件方法
-                    this.$refs.addModel.getProduct(this.tempProduct.id);
+                    this.$refs.addModal.getProduct(this.tempProduct.id);
                     break;
                 case 'dele': // 刪除
                     $('#deleModal').modal('show');
